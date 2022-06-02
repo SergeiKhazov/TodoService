@@ -22,12 +22,6 @@ namespace Todo.IntegrationTests
             builder.ConfigureServices((builder, services) =>
             {
                 services.Remove<DbContextOptions<TodoContext>>().AddDb(builder);
-                //using (var serviceScope = builder..CreateScope())
-                //{
-                //    var dbContext = serviceScope.ServiceProvider.GetService<TodoContext>();
-                //    dbContext.Database.EnsureDeleted();
-                //    dbContext.Database.EnsureCreated();
-                //}
             });
         }
 
