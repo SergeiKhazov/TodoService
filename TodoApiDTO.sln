@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todo.Domain", "Todo.Domain\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Todo.Core", "Todo.Core\Todo.Core.csproj", "{0A583C0C-34FF-4D5E-83B8-00EE55575F8B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{564A3167-B654-45C9-8C34-8DBB862FEA72}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B1257687-30E9-4FAD-9D1D-49508A0864D9}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
@@ -49,9 +47,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{5678AAF5-DA21-4F21-BB5B-8347D456C83B} = {564A3167-B654-45C9-8C34-8DBB862FEA72}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60984BC9-01D1-4B40-9733-E459B1231F96}
