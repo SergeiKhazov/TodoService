@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Todo.Domain.Common
+﻿namespace Todo.Domain.Common
 {
     public interface IEntity
     {

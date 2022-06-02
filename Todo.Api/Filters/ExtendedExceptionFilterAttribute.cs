@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using Todo.Core.Common.Exceptions;
