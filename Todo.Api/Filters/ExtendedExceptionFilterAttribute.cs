@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using Todo.Core.Common.Exceptions;
@@ -10,7 +11,7 @@ namespace Todo.Api.Filters
     {
         private readonly IDictionary<Type, Action<ExceptionContext>> _exceptionHandlers;
 
-        public ExtendedExceptionFilterAttribute()
+        public ExtendedExceptionFilterAttribute(ILogger<ExtendedExceptionFilterAttribute> logger)
         {
             _exceptionHandlers = new Dictionary<Type, Action<ExceptionContext>>
             {

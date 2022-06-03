@@ -13,6 +13,8 @@ using Todo.Infrastructure;
 using Todo.Infrastructure.Services;
 using Todo.Api.Swagger;
 using Todo.Core.Common.Enums;
+using Todo.Api.Filters;
+using Todo.Api.Extensions;
 
 namespace Todo.Api
 {
@@ -31,7 +33,7 @@ namespace Todo.Api
             ConfigureDatabase(services);
             services.AddMediatR(typeof(TodoItemDTO).Assembly);
             services.AddCustomSwagger();
-            services.AddControllers();
+            services.AddCustomControllers();
             services.AddAutoMapper(this.GetType().Assembly);
             services.AddTransient<IRepository<TodoItem>, Repository<TodoItem>>();
             services.AddAutoMapper(config => config.AddProfile<MappingProfile>());
